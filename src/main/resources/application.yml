@@ -1,0 +1,17 @@
+security:
+  oauth2:
+    client:
+      clientId: ******************************.apps.googleusercontent.com
+      clientSecret: **************
+      redirectUri: "http://onlineinteractivefilms.tk/oauth2/callback/{registrationId}"
+      accessTokenUri: https://www.googleapis.com/oauth2/v3/token
+      userAuthorizationUri: https://accounts.google.com/o/oauth2/auth
+      tokenName: oauth_token
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+      scope:
+        - email
+        - profile
+    resource:
+      userInfoUri: https://www.googleapis.com/userinfo/v2/me
+      preferTokenInfo: false
